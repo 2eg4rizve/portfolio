@@ -130,11 +130,14 @@ const Navbar = () => {
                 <div className="navbar-end ">
 
 
-                    <div className="flex items-center justify-center gap-1 ml-[10px]">
-                        <FaDownload />
-                        <a href="/src/assets/Resume of Ifthikhar Ahmed Rizve.pdf" download> Resume</a>
+                    <div className="flex">
+                        
+                        <a className="flex justify-center items-center gap-1" href="/Resume of Ifthikhar Ahmed Rizve.pdf" download> Resume <FaDownload /></a>
 
                     </div>
+                  
+
+                    {/* <a  href="https://drive.google.com/file/d/1GXeokeylH7hBOfbWTNoE67xLId27HG4P/view" download > Resume</a> */}
                     {/* {
                         user?.email ? <div className="dropdown dropdown-end">
                             <div className="flex flex-col items-center gap-2">
