@@ -5,8 +5,8 @@ const CP = () => {
 
 
     return (
-        <div className="border-2 border-[#EEE7DA] p-[50px] ">
-            <h1 className="text-4xl font-bold text-center mb-[30px]">Competitive Programmer Career</h1>
+        <div className=" p-[50px] ">
+            <h1 className="text-4xl font-bold text-center mb-[30px]">Competitive Programming Career</h1>
             <div className="text-[20px] font-bold">
                 <li>Computational Problem Solving</li>
                 <li>Algorithm</li>
@@ -15,6 +15,10 @@ const CP = () => {
                 <li>Overall, 3500+ problems were solved on different Online Judges</li>
                 <li>I actively engage in over 300+ contests .</li>
             </div>
+
+            <button className="btn mt-[40px] border-blue-500">
+            <Link className="text-blue-700 font-bold " to="https://github.com/RRIZVE" target="_blank">View Github</Link>
+            </button>
 
             <p className="mt-[20px]"></p>
 
@@ -92,7 +96,7 @@ const CP = () => {
                 <div className="border-2 border-[#EEE7DA] px-[30px] pt-[50px] h-[250px]">
                     <p>UVA</p>
                     <p>2eg4rizve</p>
-                    <p>Solved 5+ problem</p>
+                    <p>Solved 50+ problem</p>
                     <Link className="text-blue-700 font-bold" to="https://leetcode.com/2eg4rizve/" target="_blank">View Profile</Link>
 
 

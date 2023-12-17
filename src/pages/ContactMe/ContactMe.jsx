@@ -1,5 +1,7 @@
 
 import { FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { SiGmail } from "react-icons/si";
 const ContactMe = () => {
 
     return (
@@ -13,8 +15,21 @@ const ContactMe = () => {
                 <div className="flex-1 flex ">
 
 
-                    <div className=" font-bold">
-                      <p className="text-[25px]"> <FaLinkedin /></p>
+                    <div className=" font-bold lg:mt-[140px]">
+
+
+                        <div className="lg:ml-[55px] mt-[10px] flex gap-2 lg:text-[25px] lg:justify-center items-center">
+                            <p className=""> <FaLinkedin /></p>
+                            <Link className="text-blue-700 font-bold" to="https://www.linkedin.com/in/ifthikhar-ahmed-rizve-2787322a1/" target="_blank">Linkedin Profile</Link>
+                        </div>
+
+                        <div className="lg:ml-[55px] mb-[30px] mt-[10px] flex gap-2 lg:text-[25px] items-center">
+                            <p className=""> <SiGmail /></p>
+                            <Link className="text-blue-700 font-bold" to="iifthikhar.ahmed.rizve001@gmail.com" target="_blank">ifthikhar.ahmed.rizve001@gmail.com</Link>
+                        </div>
+
+
+
 
                     </div>
 
@@ -42,7 +57,7 @@ const ContactMe = () => {
 
 
 
-            
+
         </div>
 
     );

@@ -1,6 +1,6 @@
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-
+import { FaDownload } from "react-icons/fa";
 
 
 
@@ -34,13 +34,24 @@ const Navbar = () => {
         <div className="mr-[20px]"></div>
 
         <NavLink
+            to="/skills"
+            className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-[#362FD9] underline font-bold" : ""
+            }
+        >
+            Skills
+        </NavLink>
+
+        <div className="mr-[20px]"></div>
+
+        <NavLink
             to="/cp"
             className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "text-[#362FD9] underline font-bold" : ""
             }
         >
-            Competitive-Programming 
-           
+            Competitive-Programming
+
         </NavLink>
 
         <div className="mr-[20px]"></div>
@@ -51,8 +62,8 @@ const Navbar = () => {
                 isPending ? "pending" : isActive ? "text-[#362FD9] underline font-bold" : ""
             }
         >
-           Web-Development
-           
+            Web-Development
+
         </NavLink>
 
         <div className="mr-[20px]"></div>
@@ -64,8 +75,8 @@ const Navbar = () => {
                 isPending ? "pending" : isActive ? "text-[#362FD9] underline font-bold" : ""
             }
         >
-          Education
-           
+            Education
+
         </NavLink>
 
         <div className="mr-[20px]"></div>
@@ -76,12 +87,12 @@ const Navbar = () => {
                 isPending ? "pending" : isActive ? "text-[#362FD9] underline font-bold" : ""
             }
         >
-         Contact-Me
-           
+            Contact-Me
+
         </NavLink>
 
         <div className="mr-[20px]"></div>
-        
+
 
 
 
@@ -111,10 +122,19 @@ const Navbar = () => {
                     <ul className="menu menu-horizontal px-1 text-[20px]">
                         {navLink}
                     </ul>
+
+                    {/* <FaDownload />
+                    <a href="/src/assets/Resume of Ifthikhar Ahmed Rizve.pdf" download> Resume</a> */}
                 </div>
 
                 <div className="navbar-end ">
 
+
+                    <div className="flex items-center justify-center gap-1 ml-[10px]">
+                        <FaDownload />
+                        <a href="/src/assets/Resume of Ifthikhar Ahmed Rizve.pdf" download> Resume</a>
+
+                    </div>
                     {/* {
                         user?.email ? <div className="dropdown dropdown-end">
                             <div className="flex flex-col items-center gap-2">
@@ -174,6 +194,8 @@ const Navbar = () => {
 
 
             </div>
+
+            
 
         </div>
     );

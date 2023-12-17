@@ -16,6 +16,7 @@ import CP from './pages/CP/CP';
 import WD from './pages/WD/WD';
 import Education from './pages/Education/Education';
 import ContactMe from './pages/ContactMe/ContactMe';
+import Skills from './pages/Skills/Skills';
 
 
 
@@ -47,6 +48,11 @@ const router = createBrowserRouter([
       {
         path: 'contactMe',
         element: <ContactMe></ContactMe>
+      },
+      {
+        path: 'skills',
+        element: <Skills></Skills>
+
       },
       {
         path: "/login",
